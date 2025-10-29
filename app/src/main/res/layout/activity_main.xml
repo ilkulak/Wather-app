@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Prime3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="casual"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/Prime4"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/Prime4"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginHorizontal="50sp"
+        android:textColorHint="@color/Prime5"
+        android:textColor="@color/Prime6"
+        android:fontFamily="casual"
+        android:hint="@string/hint_us" />
+
+    <Button
+        android:id="@+id/mainbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="130sp"
+        android:backgroundTint="@color/Prime4"
+        android:textColor="@color/Prime3"
+        android:fontFamily="casual"
+        android:text="@string/Buttenmain" />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/mainbutton"
+        android:textAlignment="center"
+        android:textColor="@color/Prime6"
+        android:layout_marginTop="50sp"
+        android:fontFamily="casual"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/result_info2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_below="@id/result_info"
+        android:textAlignment="center"
+        android:textColor="@color/Prime6"
+        android:layout_marginTop="50sp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/result_info3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_below="@id/result_info2"
+        android:textAlignment="center"
+        android:textColor="@color/Prime6"
+        android:layout_marginTop="50sp"
+        android:textSize="25sp" />
+
+</RelativeLayout>

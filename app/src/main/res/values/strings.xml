@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather app</string>
+    <string name="logo">Weather in your city</string>
+    <string name="hint_us">Search for a city</string>
+    <string name="Buttenmain">Find out the weathe</string>
+    <string name="Usersstr">Введите текст</string>
+</resources>
