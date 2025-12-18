@@ -4,4 +4,12 @@
     <string name="hint_us">Search for a city</string>
     <string name="Buttenmain">Find out the weathe</string>
     <string name="Usersstr">Введите текст</string>
+    <string name="But">Start</string>
+    <string name="Buttt">Find out more</string>
+    <string name="Prt">Additional information</string>
+    <string name="Prtt">Find out the information</string>
+    <string name="Buttoon">Back to the weather</string>
+
+
+
 </resources>

@@ -8,11 +8,27 @@
     android:background="@color/Prime3"
     tools:context=".MainActivity">
 
+    <!-- Изображение урагана -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/climate_forecast_hurricane_svgrepo_com" />
+
+
+    <!-- Заголовок приложения - располагается ниже изображения с отступом сверху 90sp  -->
+    <!-- Текст "Weather in your city" из strings.xml -->
+    <!-- Цвет текста из сolors.xml -->
+    <!--match_parent Растягивается на всю ширину экрана-->
+    <!--wrap_content Высота автоматически подстраивается под контент внутри-->
+    <!-- android:fontFamily="casual" - шрифт -->
+    <!-- android:textStyle="bold|italic" - зажирняет текст -->
+
     <TextView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="90sp"
         android:fontFamily="casual"
         android:text="@string/logo"
         android:textAlignment="center"
@@ -20,65 +36,24 @@
         android:textSize="30sp"
         android:textStyle="bold|italic" />
 
-    <EditText
-        android:id="@+id/user_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logo"
-        android:layout_marginTop="100sp"
-        android:backgroundTint="@color/Prime4"
-        android:ems="10"
-        android:inputType="text"
-        android:layout_marginHorizontal="50sp"
-        android:textColorHint="@color/Prime5"
-        android:textColor="@color/Prime6"
-        android:fontFamily="casual"
-        android:hint="@string/hint_us" />
+    <!-- Кнопка для перехода на второй экран -->
+    <!-- android:layout_marginHorizontal - Отступы слева и справа -->
+    <!-- android:backgroundTint Цвет фона кнопки -->
+    <!-- android:layout_marginTop Отступ сверху 490sp -->
+    <!-- android:layout_below Располагается ниже текста с id logo -->
 
     <Button
-        android:id="@+id/mainbutton"
+        android:id="@+id/button_to_second"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/user_field"
-        android:layout_marginTop="20sp"
         android:layout_marginHorizontal="130sp"
         android:backgroundTint="@color/Prime4"
+        android:fontFamily="casual"
+        android:text="@string/But"
         android:textColor="@color/Prime3"
-        android:fontFamily="casual"
-        android:text="@string/Buttenmain" />
+        android:layout_marginTop="490sp"
+        android:layout_below="@id/logo"
+        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/result_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_below="@id/mainbutton"
-        android:textAlignment="center"
-        android:textColor="@color/Prime6"
-        android:layout_marginTop="50sp"
-        android:fontFamily="casual"
-        android:textSize="25sp" />
-
-    <TextView
-        android:id="@+id/result_info2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:layout_below="@id/result_info"
-        android:textAlignment="center"
-        android:textColor="@color/Prime6"
-        android:layout_marginTop="50sp"
-        android:textSize="25sp" />
-
-    <TextView
-        android:id="@+id/result_info3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:layout_below="@id/result_info2"
-        android:textAlignment="center"
-        android:textColor="@color/Prime6"
-        android:layout_marginTop="50sp"
-        android:textSize="25sp" />
 
 </RelativeLayout>

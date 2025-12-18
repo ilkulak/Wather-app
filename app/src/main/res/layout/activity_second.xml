@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/second"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Prime3"
+    android:gravity="center">
+    <!-- android:orientation="vertical" Элементы располагаются вертикально (друг под другом) -->
+    <!-- android:gravity="center" Центрирование дочерних элементов по горизонтали -->
+    <!-- match_parent Занимает всю высоту и ширену экрана -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!-- wrap_content Высота и ширена подстраивается под содержимое -->
+        <!-- android:orientation="horizontal" - Элементы располагаются горизонтально (в ряд) -->
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/cloud_forecast_moon_svgrepo_com" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/forecast_sun_sunrise_svgrepo_com" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/logo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:fontFamily="casual"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/Prime4"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo2"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="10sp"
+        android:backgroundTint="@color/Prime4"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/hint_us"
+        android:inputType="text"
+        android:textColor="@color/Prime6"
+        android:textColorHint="@color/Prime5" />
+
+    <!-- android:ems="10" Ширина ~10 символов "M" -->
+    <!-- android:hint="@string/hint_us" Подсказка при пустом поле -->
+    <!--android:inputType="text"  Тип ввода - текст -->
+    <!-- android:textColorHint="@color/Prime5" /> Цвет подсказки -->
+
+
+    <Button
+            android:id="@+id/mainbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_field"
+            android:layout_marginTop="20sp"
+            android:layout_marginHorizontal="130sp"
+            android:backgroundTint="@color/Prime4"
+            android:textColor="@color/Prime3"
+            android:fontFamily="casual"
+            android:text="@string/Buttenmain" />
+
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_below="@id/mainbutton"
+        android:layout_marginTop="50sp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/Prime6"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonn"
+        android:layout_width="168dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/result_info"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/Prime4"
+        android:fontFamily="casual"
+        android:text="@string/Buttt"
+        android:textColor="@color/Prime3" />
+
+
+
+
+</LinearLayout>
+
+

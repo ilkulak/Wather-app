@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/third"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Prime3"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/city_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Details"
+        android:textSize="28sp"
+        android:fontFamily="casual"
+        android:textColor="@color/Prime4"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/weather_icon_imageview"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/weather_svgrepo_com"
+        android:contentDescription="Weather icon" />
+    <!-- android:contentDescription="Weather icon" Описание для доступности  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/third_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Humidity: "
+            android:textColor="@color/Prime4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/third_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Pressure: "
+            android:textColor="@color/Prime4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/third_info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Wind Speed: "
+            android:textColor="@color/Prime4"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back_button_third"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Back"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:backgroundTint="@color/Prime4"
+        android:textColor="@color/Prime3"/>
+
+</LinearLayout>

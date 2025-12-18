@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:elevation="8dp">
+    <!-- android:elevation="8dp"> ТЕНЬ: создает эффект "плавающего" элемента над фоном -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search History"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:color/darker_gray" />
+    <!-- android:padding="12dp" ВНУТРЕННИЕ ОТСТУПЫ: 12dp от текста до краев -->
+
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="400dp" />
+    <!-- android:maxHeight="400dp" /> МАКС. ВЫСОТА: не более 400dp, затем появляется скролл -->
+
+    <Button
+        android:id="@+id/clearHistoryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear All History"
+        android:padding="12dp" />
+
+</LinearLayout>
